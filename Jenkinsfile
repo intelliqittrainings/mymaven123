@@ -2,7 +2,7 @@ node('master')
 {
     stage('ContinuousDownload')
     {
-        git 'https://github.com/intelliqittrainings/maven.git'             
+        git 'https://github.com/intelliqittrainings/mymaven123.git'             
     }
     stage('ContinuousBuild')
     {
@@ -23,3 +23,4 @@ sh 'scp /home/ubuntu/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.wa
     
     sh 'scp /home/ubuntu/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war ubuntu@172.31.28.60:/var/lib/tomcat9/webapps/prodapp.war'}
 }
+
