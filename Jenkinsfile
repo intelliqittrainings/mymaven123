@@ -1,10 +1,10 @@
 node('master') 
 {
-    stage('ContinuousDownload')
+    stage('ContinuousDownload_Master')
     {
         git 'https://github.com/intelliqittrainings/mymaven123.git'             
     }
-    stage('ContinuousBuild')
+    stage('ContinuousBuild_Master')
     {
         sh 'mvn package'
     }
